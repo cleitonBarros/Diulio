@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { Hamburguer } from "../Button/hamburguer";
 import * as S from "./style";
 import { ThemeContext } from "../../context/useContext";
