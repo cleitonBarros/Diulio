@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { bounceIn } from "../../pages/style";
 
 export const Container = styled.div`
   position: relative;
@@ -10,6 +11,11 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   border-radius: 1rem;
+  -webkit-box-shadow: 0px 12px 19px 4px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 0px 12px 19px 4px rgba(0, 0, 0, 0.54);
+  box-shadow: 0px 12px 19px 4px rgba(0, 0, 0, 0.54);
+  
+  animation: ${bounceIn} 2s ease;
 
   &::before {
     position: absolute;

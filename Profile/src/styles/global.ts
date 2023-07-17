@@ -5,7 +5,7 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        text-decoration: none;
+        text-decoration: none !important;
         list-style: none;
         outline: none;
         scroll-behavior:smooth;
