@@ -25,29 +25,28 @@ export function Header() {
     }
   }, [width]);
 
-
   return (
     <>
       <S.container>
         <S.Nav>
           <ul>
             <li>
-              <a href="#">Inicio</a>
+              <a href="#Inicio">Inicio</a>
             </li>
             <li>
-              <a href="#">Sobre</a>
+              <a href="#Bio">Sobre</a>
             </li>
             <li>
-              <a href="#">Serviços</a>
+              <a href="#Service">Serviços</a>
             </li>
             <li>
-              <a href="#">Galeria</a>
+              <a href="#Gallery">Galeria</a>
             </li>
             <li>
-              <a href="#">Promoção</a>
+              <a href="#Field">Promoção</a>
             </li>
             <li>
-              <a href="#">contato</a>
+              <a href="#Contact">contato</a>
             </li>
           </ul>
         </S.Nav>
@@ -59,32 +58,32 @@ export function Header() {
       <S.Mobile className={UseContext?.open ? "open" : ""}>
         <ul>
           <li>
-            <a href="#">
+            <a href="#Inicio">
               <House size={32} />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#Bio">
               <IdentificationCard size={32} />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#Service">
               <Camera size={32} />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#Gallery">
               <Images size={32} />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#Field">
               <Tag size={32} />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#Contact">
               <Phone size={32} />
             </a>
           </li>

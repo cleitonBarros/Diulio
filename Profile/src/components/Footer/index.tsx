@@ -6,7 +6,7 @@ import { Button } from "../Button/default";
 export function Footer() {
   return (
     <>
-      <S.Contact>
+      <S.Contact id="Contact">
         <S.Content>
           <div className="wpp">
             <h2>Me contate</h2>

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Section = styled.section`
   width: 100%;
   max-width: 90rem;
-  padding: 0 1.5rem;
+  padding: 2rem;
 
   display: flex;
   justify-content: center;
@@ -11,6 +11,6 @@ export const Section = styled.section`
 
   @media ${({ theme }) => theme.DEVICE.laptop} {
     align-items: center;
-    padding: 6rem 2.5rem;
+    padding: 10rem 2.5rem;
   }
 `;
