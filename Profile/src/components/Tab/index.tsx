@@ -7,7 +7,6 @@ import { UseWindowSize } from "../../hooks/useWidthSize";
 import { CookingPot, Dog, Leaf, Star } from "@phosphor-icons/react";
 export function Tabs() {
   const [activeTab, setActiveTab] = useState("tab1");
-  const [profile,setProfile] = useState(null)
 
   useEffect(() =>{
     
