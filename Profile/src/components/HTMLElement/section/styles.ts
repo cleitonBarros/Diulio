@@ -11,6 +11,6 @@ export const Section = styled.section`
 
   @media ${({ theme }) => theme.DEVICE.laptop} {
     align-items: center;
-    padding: 10rem 2.5rem;
+    padding: 7rem 2.5rem;
   }
 `;

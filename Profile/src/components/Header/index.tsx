@@ -1,14 +1,14 @@
 import { useContext, useEffect } from "react";
+import { Link } from "react-scroll";
 import { Hamburguer } from "../Button/hamburguer";
 import * as S from "./style";
 import { ThemeContext } from "../../context/useContext";
 import {
-  Camera,
   House,
   IdentificationCard,
   Images,
-  Phone,
-  Tag
+  Package,
+  Phone
 } from "@phosphor-icons/react";
 import { UseWindowSize } from "../../hooks/useWidthSize";
 
@@ -25,28 +25,44 @@ export function Header() {
     }
   }, [width]);
 
+  useEffect(() => {
+    const close = () => {
+      UseContext?.setClose(false);
+    };
+    if (width >= 1130) {
+      window.addEventListener("resize", close);
+    }
+  }, [width]);
+
   return (
     <>
       <S.container>
         <S.Nav>
           <ul>
             <li>
-              <a href="#Inicio">Inicio</a>
+              <Link to="Inicio"  smooth={true} spy={true} offset={-10} duration={100}>
+                Inicio
+              </Link>
             </li>
             <li>
-              <a href="#Bio">Sobre</a>
+              <Link to="Bio"  smooth={true} spy={true} offset={-10} duration={100}>
+                Sobre
+              </Link>
             </li>
             <li>
-              <a href="#Service">Serviços</a>
+              <Link to="Service"  smooth={true} spy={true} offset={-10} duration={100}>
+                Serviços
+              </Link>
             </li>
             <li>
-              <a href="#Gallery">Galeria</a>
+              <Link to="Gallery"  smooth={true} spy={true} offset={-10} duration={100}>
+                Galeria
+              </Link>
             </li>
             <li>
-              <a href="#Field">Promoção</a>
-            </li>
-            <li>
-              <a href="#Contact">contato</a>
+              <Link to="Contact"  smooth={true} spy={true} offset={0} duration={100}>
+                contato
+              </Link>
             </li>
           </ul>
         </S.Nav>
@@ -69,17 +85,12 @@ export function Header() {
           </li>
           <li>
             <a href="#Service">
-              <Camera size={32} />
+              <Package size={32} />
             </a>
           </li>
           <li>
             <a href="#Gallery">
               <Images size={32} />
-            </a>
-          </li>
-          <li>
-            <a href="#Field">
-              <Tag size={32} />
             </a>
           </li>
           <li>

@@ -14,7 +14,7 @@ export const Container = styled.div`
   -webkit-box-shadow: 0px 12px 19px 4px rgba(0, 0, 0, 0.54);
   -moz-box-shadow: 0px 12px 19px 4px rgba(0, 0, 0, 0.54);
   box-shadow: 0px 12px 19px 4px rgba(0, 0, 0, 0.54);
-  
+
   animation: ${bounceIn} 2s ease;
 
   &::before {

@@ -4,17 +4,17 @@ import App from "./App.tsx";
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/global.ts";
 import { defaultTheme } from "./styles/themes/defaultTheme.ts";
-import { SiderBarContext } from "./context/useContext.tsx";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { ModalContext, SiderBarContext } from "./context/useContext.tsx";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <SiderBarContext>
-      <ThemeProvider theme={defaultTheme}>
-        <GlobalStyles />
-        <App />
-      </ThemeProvider>
+      <ModalContext>
+        <ThemeProvider theme={defaultTheme}>
+          <GlobalStyles />
+          <App />
+        </ThemeProvider>
+      </ModalContext>
     </SiderBarContext>
   </React.StrictMode>
 );

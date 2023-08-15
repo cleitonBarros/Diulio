@@ -15,7 +15,7 @@ export default createGlobalStyle`
         font-family: 'Poppins', sans-serif;
         -webkit-font-smoothing: antialiased;
     }
-
+    
     html ::-webkit-scrollbar {
         width: 6px;
     }
@@ -27,4 +27,4 @@ export default createGlobalStyle`
     html ::-webkit-scrollbar-track {
       background: white;
     }
-`
+`;

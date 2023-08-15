@@ -86,8 +86,8 @@ export const Content = styled.div`
   gap: 2rem;
   width: 100%;
   max-width: 90rem;
-  max-height: 450px;
-  padding: 4.7rem;
+  max-height: 100vh;
+  padding: 5rem 4.7rem;
 
   img {
     width: 60%;
@@ -102,6 +102,7 @@ export const Content = styled.div`
     height: 12rem;
   }
   .wpp {
+    height: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -125,7 +126,7 @@ export const Content = styled.div`
   }
   p {
     color: #000;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;

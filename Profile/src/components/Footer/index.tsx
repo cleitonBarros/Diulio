@@ -9,12 +9,15 @@ export function Footer() {
       <S.Contact id="Contact">
         <S.Content>
           <div className="wpp">
-            <h2>Me contate</h2>
+            <h2>Contate-me</h2>
             <p>
               Entre em contato comigo para fazer um orçamento ou para sanar
               algum duvida que apareceu
             </p>
-            <Button title="entra em contato" />
+            <Button
+              href="https://wa.me/556282331925?text=Eu%20gostaria%20de%20fazer%20um%20pedido..."
+              title="Entra em contato"
+            />
           </div>
           <label htmlFor="img">
             <div id="img" className="Qr-code"></div>

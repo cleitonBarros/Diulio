@@ -35,23 +35,27 @@ export const Nav = styled.nav`
     align-items: center;
 
     ul {
+      margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 2rem;
-    }
-    a {
-      color: #f9f9f9;
-      font-size: 1rem;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-      text-transform: uppercase;
-      transition: letter-spacing 0.2s ease-in-out;
-
-      &:hover {
-        color: #84bd00;
-        letter-spacing: 0.5px;
+      li {
+        > a {
+          color: #FFF;
+          font-size: 1.25rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          text-transform: uppercase;
+          transition: letter-spacing 0.2s ease-in-out;
+          cursor: pointer;
+          &.active {
+            color: #84bd00;
+            letter-spacing: 1px;
+          }
+        }
       }
     }
   }
