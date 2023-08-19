@@ -87,10 +87,9 @@ export function Main() {
           </Section>
         </S.Container>
       </Container>
-
       <S.Banner className="paralax-2"></S.Banner>
 
-      <Container>
+      {/* <Container>
         <S.Container>
           <Section id="Service">
             <S.Card>
@@ -135,29 +134,19 @@ export function Main() {
             </S.Card>
           </Section>
         </S.Container>
-      </Container>
-
-      <S.Banner className="paralax-3"></S.Banner>
+      </Container> */}
 
       <Container>
         <S.Container>
           <Section id="Gallery">
             <S.galery>
-              {/* <img
-                className="view"
-                src={
-                  UseContext?.file === null ? imgperfil : UseContext?.file?.url
-                }
-                alt={UseContext?.file?.alt}
-                onClick={() => setModel(!model)}
-              /> */}
               <Tabs />
             </S.galery>
           </Section>
         </S.Container>
       </Container>
 
-      <S.Banner className="paralax-5"></S.Banner>
+      <S.Banner className="paralax-3"></S.Banner>
 
       <S.Gift onClick={statusModal} className="gift"></S.Gift>
       <S.PopUp onClick={statusModal} className={open ? "show" : ""}>
@@ -185,9 +174,7 @@ export function Main() {
             emulateTouch
             swipeable
             statusFormatter={() => ""}
-          >
-    
-          </Carousel>
+          ></Carousel>
           <img src={file?.url} alt={file?.alt} />
         </div>
       </S.PopUpImg>

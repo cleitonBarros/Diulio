@@ -4,17 +4,14 @@ import { TabContent } from "./TabContent";
 import { TabNavItem } from "./TabNavItem";
 import { Carousel2 } from "../Slider";
 import { UseWindowSize } from "../../hooks/useWidthSize";
-import { CookingPot, Dog, Leaf, Star } from "@phosphor-icons/react";
+import { CookingPot, Dog, Leaf, SketchLogo } from "@phosphor-icons/react";
 export function Tabs() {
   const [activeTab, setActiveTab] = useState("tab1");
 
-  useEffect(() =>{
-    
-  },[])
+  useEffect(() => {}, []);
 
   const [width] = UseWindowSize();
   const isMobile = width <= 550;
-
 
   return (
     <S.Container>
@@ -30,9 +27,11 @@ export function Tabs() {
         />
         <TabNavItem
           icon={
-            isMobile ? <Star size={32} color="#84bd00" weight="fill" /> : null
+            isMobile ? (
+              <SketchLogo size={32} color="#84bd00" weight="fill" />
+            ) : null
           }
-          title={!isMobile ? "Céu" : ""}
+          title={!isMobile ? "Objeto" : ""}
           id="tab2"
           activeTab={activeTab}
           setActiveTab={setActiveTab}
@@ -60,13 +59,13 @@ export function Tabs() {
       </S.Nav>
       <S.Outlet>
         <TabContent id="tab1" activeTab={activeTab}>
-          <Carousel2 type="animal" />
+          <Carousel2 type="animals" />
         </TabContent>
         <TabContent id="tab2" activeTab={activeTab}>
-          <Carousel2 />
+          <Carousel2 type="object" />
         </TabContent>
         <TabContent id="tab3" activeTab={activeTab}>
-          <Carousel2 />
+          <Carousel2 type="doce" />
         </TabContent>
         <TabContent id="tab4" activeTab={activeTab}>
           <Carousel2 type="nature" />

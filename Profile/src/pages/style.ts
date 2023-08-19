@@ -2,8 +2,7 @@ import styled, { keyframes } from "styled-components";
 import gift from "../assets/gift2.png";
 import back1 from "../assets/background/back.jpg";
 import back2 from "../assets/background/back2.jpg";
-import back4 from "../assets/background/back4.jpg";
-import back5 from "../assets/background/back5.jpg";
+import back3 from "../assets/background/back5.jpg";
 
 const UpDown = keyframes`
 100% {
@@ -53,10 +52,7 @@ export const Banner = styled.div`
     background-image: url(${back2});
   }
   &.paralax-3 {
-    background-image: url(${back4});
-  }
-  &.paralax-5 {
-    background-image: url(${back5});
+    background-image: url(${back3});
   }
 
   .text {
@@ -323,31 +319,7 @@ export const galery = styled.div`
       width: 50%;
       height: 50%;
     }
-    /* display: grid;
-    grid-template-areas:
-      "F-01 F-01 F-01 F-01"
-      "F-02 F-02 F-02 F-03"
-      "F-04 F-04 F-04 F-04"
-      "F-05 F-05 F-06 F-06"; */
   }
-  /* #F-01 {
-    grid-area: F-01;
-  }
-  #F-02 {
-    grid-area: F-02;
-  }
-  #F-03 {
-    grid-area: F-03;
-  }
-  #F-04 {
-    grid-area: F-04;
-  }
-  #F-05 {
-    grid-area: F-05;
-  }
-  #F-06 {
-    grid-area: F-06;
-  } */
 `;
 export const Card = styled.div`
   max-width: 90rem;

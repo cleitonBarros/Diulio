@@ -4,7 +4,7 @@ import { bounceIn } from "../../pages/style";
 export const Container = styled.div`
   position: relative;
   height: max(100%, 15rem);
-  width: max(100%, 34rem);
+  width: max(100%, 18rem);
   background-color: #7a9860;
 
   display: flex;
@@ -38,12 +38,12 @@ export const Container = styled.div`
     h2,
     p {
       font-weight: 300;
-      font-size: 1rem;
+      font-size: 0%.875;
       margin-bottom: 0;
     }
     h4 {
-      font-size: 6.25rem;
-      font-weight: 600;
+      font-size: 3.25rem;
+      font-weight: 500;
       margin-bottom: 0;
     }
   }
@@ -75,6 +75,20 @@ export const Container = styled.div`
       p {
         font-size: 0.675rem;
         margin-bottom: 0;
+      }
+    }
+  }
+
+  @media (min-width: 620px) {
+    width: max(100%, 34rem);
+    .left {
+      h2,
+      p {
+        font-size: 1rem;
+      }
+      h4 {
+        font-size: 6.25rem;
+        font-weight: 600;
       }
     }
   }

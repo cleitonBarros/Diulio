@@ -2,7 +2,7 @@ import * as S from "./style";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { slide } from "../../assets";
+import { Objects } from "../../assets";
 
 import { useContext } from "react";
 import { ImageContext } from "../../context/useContext";
@@ -54,7 +54,7 @@ export function Carousel2({ type }: props) {
   return (
     <S.Container>
       <Slider {...settings}>
-        {slide.map(
+        {Objects.map(
           (imgs) =>
             imgs.type === type && (
               <S.Box key={imgs.id}>
