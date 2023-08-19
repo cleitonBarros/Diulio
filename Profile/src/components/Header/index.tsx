@@ -7,7 +7,6 @@ import {
   House,
   IdentificationCard,
   Images,
-  Package,
   Phone
 } from "@phosphor-icons/react";
 import { UseWindowSize } from "../../hooks/useWidthSize";
@@ -49,11 +48,11 @@ export function Header() {
                 Sobre
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="Service"  smooth={true} spy={true} offset={-10} duration={100}>
                 Serviços
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="Gallery"  smooth={true} spy={true} offset={-10} duration={100}>
                 Galeria
@@ -83,11 +82,11 @@ export function Header() {
               <IdentificationCard size={32} />
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#Service">
               <Package size={32} />
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="#Gallery">
               <Images size={32} />

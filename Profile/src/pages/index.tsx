@@ -7,15 +7,15 @@ import { Cupom } from "../components/Cupom";
 import { BioPhoto } from "../assets";
 import Confetti from "react-confetti";
 import { UseWindowSize } from "../hooks/useWidthSize";
-import edit from "../assets/edit.jpg";
-import studio from "../assets/studio.jpg";
+// import edit from "../assets/edit.jpg";
+// import studio from "../assets/studio.jpg";
 import { Tabs } from "../components/Tab";
 import { useContext } from "react";
 import { ImageContext } from "../context/useContext";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import { Button } from "../components/Button/default";
+// import { Button } from "../components/Button/default";
 
 export function Main() {
   const { file, model, setModel } = useContext(ImageContext);
